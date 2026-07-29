@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Discover Dive",
+    "description": "Deneyim gerektirmeyen tanışma dalışları. İlk kez dalış yapacaklar için güvenli ve eğlenceli bir başlangıç deneyimi.",
+    "icon": "Compass",
+    "image": "/assets/discover.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Waterfall Dive",
+    "description": "Antalya'nın ünlü Düden Şelalesi altında eşsiz bir dalış deneyimi. Tatlı su ve tuzlu suyun buluştuğu büyülü bir ortam.",
+    "icon": "Droplets",
+    "image": "/assets/duden.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Wreck Dive",
+    "description": "St. Didier ve diğer tarihi batık noktalarında özel dalış turları. Deneyimli dalıcılar için heyecan verici keşifler.",
+    "icon": "Anchor",
+    "image": "/assets/wreck.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Cave Dive",
+    "description": "Akdeniz'in gizli mağara sistemlerinde teknik dalış deneyimi. İleri seviye dalıcılar için profesyonel rehberlik.",
+    "icon": "Mountain",
+    "image": "/assets/cave.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Snorkeling",
+    "description": "Dalış sertifikası olmadan su altı dünyasını keşfedin. Ailecek katılabileceğiniz güvenli ve keyifli şnorkel turları.",
+    "icon": "Fish",
+    "image": "/assets/snorkel.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Pool Dive",
+    "description": "Havuzda dalış eğitimleri ve pratik seansları. Kontrollü ortamda temel becerileri geliştirin.",
+    "icon": "WavesLadder",
+    "image": "/assets/pool.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Courses",
+    "description": "Open Water Diver'dan Technical Diving'e kadar tüm PADI sertifikasyon programları. Profesyonel eğitmenler eşliğinde.",
+    "icon": "Award",
+    "image": "/assets/Banner.jpg"
+  }
+]

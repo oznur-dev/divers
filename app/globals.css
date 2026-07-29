@@ -1,0 +1,383 @@
+@import "tailwindcss";
+
+/* Class-based dark mode (Tailwind v4) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light theme tokens - Diving theme with logo colors */
+:root {
+  --background: rgb(255 255 255);
+  --foreground: rgb(10 10 10);
+  --muted: rgb(240 248 252);
+  --muted-foreground: rgb(100 116 139);
+  --border: rgb(226 232 240);
+  --primary: rgb(0 60 143);
+  --primary-foreground: rgb(255 255 255);
+  --secondary: rgb(0 153 204);
+  --secondary-foreground: rgb(255 255 255);
+  --accent: rgb(0 196 229);
+  --accent-foreground: rgb(255 255 255);
+  --ocean-light: rgb(0 196 229);
+  --ocean-medium: rgb(0 153 204);
+  --ocean-deep: rgb(0 71 171);
+  --ocean-dark: rgb(0 60 143);
+  --surface: rgb(255 255 255);
+  --surface-hover: rgb(240 248 252);
+}
+
+/* Dark theme tokens - modern dark with brighter ocean colors for readability */
+.dark {
+  --background: rgb(2 6 23);
+  --foreground: rgb(241 245 249);
+  --muted: rgb(15 23 42);
+  --muted-foreground: rgb(148 163 184);
+  --border: rgb(51 65 85);
+  --primary: rgb(56 189 248);
+  --primary-foreground: rgb(2 6 23);
+  --secondary: rgb(14 165 233);
+  --secondary-foreground: rgb(248 250 252);
+  --accent: rgb(103 232 249);
+  --accent-foreground: rgb(2 6 23);
+  --ocean-light: rgb(103 232 249);
+  --ocean-medium: rgb(56 189 248);
+  --ocean-deep: rgb(14 165 233);
+  --ocean-dark: rgb(186 230 253);
+  --surface: rgb(15 23 42);
+  --surface-hover: rgb(30 41 59);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ocean-light: var(--ocean-light);
+  --color-ocean-medium: var(--ocean-medium);
+  --color-ocean-deep: var(--ocean-deep);
+  --color-ocean-dark: var(--ocean-dark);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  * {
+    border-color: color-mix(in srgb, var(--border) 70%, transparent);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Selection */
+  ::selection {
+    background: color-mix(in srgb, var(--ocean-medium) 25%, transparent);
+    color: var(--foreground);
+  }
+
+  /* Avoid flash of unstyled content for theme */
+  html.dark {
+    color-scheme: dark;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Ocean wave animation */
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes bubble {
+  0% { transform: translateY(0) scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-100px) scale(1); opacity: 0; }
+}
+
+/* Gradient backgrounds */
+.ocean-gradient {
+  background: linear-gradient(135deg, var(--ocean-light) 0%, var(--ocean-deep) 100%);
+}
+
+.ocean-gradient-soft {
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--ocean-light) 10%, transparent) 0%, color-mix(in srgb, var(--ocean-deep) 5%, transparent) 100%);
+}
+
+/* Modern mesh gradient backgrounds */
+.mesh-gradient {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(at 20% 20%, rgba(0, 196, 229, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(0, 153, 204, 0.12) 0px, transparent 50%),
+    radial-gradient(at 0% 80%, rgba(0, 71, 171, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(0, 196, 229, 0.08) 0px, transparent 50%);
+}
+
+.dark .mesh-gradient {
+  background-image:
+    radial-gradient(at 20% 20%, rgba(56, 189, 248, 0.18) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 80%, rgba(2, 132, 199, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(103, 232, 249, 0.1) 0px, transparent 50%);
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Animated gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--ocean-medium), var(--ocean-deep), var(--ocean-light));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Solid gradient backgrounds for buttons (bypasses Tailwind v4 gradient-stop limitation with custom theme colors) */
+.btn-gradient-primary {
+  background-image: linear-gradient(
+    90deg,
+    var(--ocean-medium) 0%,
+    var(--ocean-deep) 50%,
+    var(--ocean-dark) 100%
+  );
+}
+
+.dark .btn-gradient-primary {
+  background-image: linear-gradient(
+    90deg,
+    var(--ocean-light) 0%,
+    var(--ocean-medium) 50%,
+    var(--ocean-deep) 100%
+  );
+}
+
+.btn-gradient-secondary {
+  background-image: linear-gradient(
+    90deg,
+    var(--ocean-light) 0%,
+    var(--ocean-medium) 100%
+  );
+}
+
+.dark .btn-gradient-secondary {
+  background-image: linear-gradient(
+    90deg,
+    var(--ocean-light) 0%,
+    var(--ocean-medium) 100%
+  );
+}
+
+/* Brand text gradient for navbar/footer */
+.brand-gradient-text {
+  background-image: linear-gradient(
+    90deg,
+    var(--ocean-medium),
+    var(--ocean-deep)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.dark .brand-gradient-text {
+  background-image: linear-gradient(
+    90deg,
+    var(--ocean-light),
+    var(--ocean-medium)
+  );
+}
+
+/* Icon gradient bg used by service/value/feature card icons */
+.icon-gradient-bg {
+  background-image: linear-gradient(
+    135deg,
+    var(--ocean-light),
+    var(--ocean-medium)
+  );
+}
+
+/* CTA section big gradient panel */
+.cta-gradient-panel {
+  background-image: linear-gradient(
+    135deg,
+    var(--ocean-deep),
+    var(--ocean-medium),
+    var(--ocean-light)
+  );
+}
+
+/* Hover gradient for social/action icons */
+.hover-gradient-ocean {
+  transition: background-image 0.3s ease, background-color 0.3s ease;
+}
+.hover-gradient-ocean:hover {
+  background-image: linear-gradient(135deg, var(--ocean-medium), var(--ocean-deep));
+}
+
+/* Soft horizontal pill bg for active nav (light alpha mix) */
+.pill-gradient-soft {
+  background-image: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ocean-light) 18%, transparent),
+    color-mix(in srgb, var(--ocean-medium) 18%, transparent)
+  );
+}
+.dark .pill-gradient-soft {
+  background-image: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ocean-medium) 28%, transparent),
+    color-mix(in srgb, var(--ocean-light) 28%, transparent)
+  );
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Shimmer / shine effect */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* Subtle pulse for CTAs */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 153, 204, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(0, 153, 204, 0); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2.5s infinite;
+}
+
+/* Modern card hover lift */
+.card-lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-lift:hover {
+  transform: translateY(-8px);
+}
+
+/* Decorative blob */
+.blob {
+  filter: blur(60px);
+  opacity: 0.5;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--ocean-medium), var(--ocean-deep));
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--ocean-light), var(--ocean-medium));
+}
+
+/* Soft fade-in on page load for entire body */
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+body {
+  animation: fadeInPage 0.6s ease-out;
+}
+
+/* Gentle floating animation for blobs */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -30px); }
+}
+
+.animate-float-slow {
+  animation: float-slow 12s ease-in-out infinite;
+}
+
+@keyframes float-slow-reverse {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-25px, 20px); }
+}
+
+.animate-float-slow-reverse {
+  animation: float-slow-reverse 14s ease-in-out infinite;
+}
+
+/* Subtle shine effect for buttons/cards */
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.7s ease;
+  pointer-events: none;
+}
+
+.shine:hover::after {
+  transform: translateX(100%);
+}

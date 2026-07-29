@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "eyebrow": "Hakkımızda",
+    "title": "Dalış Tutkusu ile Dolu Bir Ekip",
+    "subtitle": "Anemon Turizm, yılların deneyimi ve su altı dünyasına olan tutkusuyla dalışseverlere unutulmaz anılar yaşatan profesyonel bir tur operatörüdür."
+  },
+  "content": {
+    "title": "Hikayemiz",
+    "paragraphs": [
+      "Anemon Turizm, denizlerin büyülü dünyasını keşfetmek isteyenler için kurulmuş, TURSAB belgeli profesyonel bir dalış tur operatörüdür. Yıllardır su altı dünyasının en güzel köşelerini dalışseverlerle buluşturuyoruz.",
+      "Kızıldeniz'den Maldivler'e, Bahamas'tan Azor Adaları'na kadar dünyanın en prestijli dalış noktalarında güvenli, konforlu ve unutulmaz dalış deneyimleri sunuyoruz. Her tur, deneyimli rehberlerimiz ve kaliteli hizmet anlayışımızla özenle planlanır.",
+      "Bugün, PADI sertifikalı eğitim programlarımız, liveaboard dalış turlarımız ve özel dalış gezilerimizle Türkiye'nin önde gelen dalış operatörlerinden biriyiz. Müşteri memnuniyeti bizim için her şeyden önce gelir."
+    ]
+  },
+  "values": {
+    "eyebrow": "Değerlerimiz",
+    "title": "Bizi Farklı Kılan Prensipler",
+    "subtitle": "Bu değerler, hizmet kalitemizi ve müşteri deneyimimizi şekillendiren temel taşlarımızdır.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Güvenlik",
+        "description": "Tüm turlarımızda güvenlik standartlarına azami dikkat gösteriyoruz. DAN Europe sigortası ve profesyonel rehberlik.",
+        "icon": "Shield"
+      },
+      {
+        "id": 2,
+        "title": "Deneyim",
+        "description": "Yılların getirdiği tecrübe ile dünyanın en iyi dalış noktalarını sizin için seçiyoruz.",
+        "icon": "Sparkles"
+      },
+      {
+        "id": 3,
+        "title": "Şeffaflık",
+        "description": "Gizli ücret yok, net fiyatlandırma. Ne ödeyeceğinizi baştan bilirsiniz.",
+        "icon": "Award"
+      },
+      {
+        "id": 4,
+        "title": "Müşteri Memnuniyeti",
+        "description": "Her misafirimize özel ilgi gösteriyor, unutulmaz deneyimler yaşatmak için çalışıyoruz.",
+        "icon": "TrendingUp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+# Anemon Turizm - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://anemonturizm.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 0

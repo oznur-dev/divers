@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Damla şekli -->
+  <defs>
+    <linearGradient id="dropGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C4E5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0099CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003C8F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ana damla -->
+  <path d="M100,20 C100,20 150,80 150,130 C150,160 130,180 100,180 C70,180 50,160 50,130 C50,80 100,20 100,20 Z" 
+        fill="url(#dropGradient)"/>
+  
+  <!-- Dalış figürü -->
+  <circle cx="100" cy="40" r="8" fill="#ffffff"/>
+  <path d="M100,48 L100,70 M100,55 L90,65 M100,55 L110,65 M100,70 L90,85 M100,70 L110,85" 
+        stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Balık figürleri -->
+  <g fill="#00C4E5">
+    <path d="M70,100 L75,95 L75,105 Z M75,100 L85,100 L85,95 L85,105 Z" opacity="0.8"/>
+    <path d="M120,120 L125,115 L125,125 Z M125,120 L135,120 L135,115 L135,125 Z" opacity="0.8"/>
+  </g>
+  
+  <!-- Dalgalar -->
+  <path d="M60,140 Q70,135 80,140 Q90,145 100,140 Q110,135 120,140 Q130,145 140,140" 
+        stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- ANEMON yazısı -->
+  <text x="100" y="210" font-family="Arial, sans-serif" font-size="32" font-weight="bold" 
+        fill="#003C8F" text-anchor="middle">ANEMON</text>
+</svg>

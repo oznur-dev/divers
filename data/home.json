@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "eyebrow": "Dalış Turları & PADI Eğitimleri",
+    "title": "Denizlerin Derinliklerinde Unutulmaz Anılar",
+    "subtitle": "Anemon Turizm, dünya çapında en iyi dalış noktalarında profesyonel rehberlik ve güvenli dalış deneyimleri sunan TURSAB belgeli tur operatörüdür.",
+    "primaryCta": { "label": "Rezervasyon Yapın", "href": "/contact" },
+    "secondaryCta": { "label": "Turlarımız", "href": "/services" }
+  },
+  "servicesSection": {
+    "eyebrow": "Hizmetlerimiz",
+    "title": "Profesyonel Dalış Deneyimleri",
+    "subtitle": "Kızıldeniz'den Maldivler'e, dünyanın en iyi dalış noktalarında size özel turlar ve eğitimler."
+  },
+  "aboutPreview": {
+    "eyebrow": "Neden Anemon Turizm",
+    "title": "Güvenli ve Unutulmaz Dalış Maceraları",
+    "body": "Yıllardır dalış tutkunu gezginlere profesyonel rehberlik ve en kaliteli hizmeti sunarak, su altı dünyasının büyüsünü keşfetmenizi sağlıyoruz.",
+    "cta": { "label": "Hakkımızda", "href": "/about" },
+    "features": [
+      {
+        "id": 1,
+        "title": "Dünya Çapında Destinasyonlar",
+        "description": "Kızıldeniz, Maldivler, Bahamas ve daha fazlası... Dünyanın en iyi dalış noktalarını keşfedin.",
+        "icon": "Globe"
+      },
+      {
+        "id": 2,
+        "title": "En İyi Fiyat Garantisi",
+        "description": "Aynı turu daha ucuza bulursanız, fark iade edilir. Gizli ücret yok, tam şeffaflık.",
+        "icon": "TrendingUp"
+      },
+      {
+        "id": 3,
+        "title": "Ücretsiz DAN Sigortası",
+        "description": "1.000€ ve üzeri rezervasyonlarda DAN Europe dalış kaza sigortası hediye.",
+        "icon": "Shield"
+      }
+    ]
+  },
+  "contactCta": {
+    "title": "Dalış Maceranız Başlasın!",
+    "subtitle": "Hayalinizdeki dalış turunu planlamak için bizimle iletişime geçin. Genellikle bir iş günü içinde yanıt veriyoruz.",
+    "cta": { "label": "İletişime Geçin", "href": "/contact" }
+  },
+  "gallery": {
+    "eyebrow": "Galeri",
+    "title": "Su Altı Dünyasından Kareler",
+    "subtitle": "Unutulmaz dalış deneyimlerimizden ve keşfettiğimiz muhteşem su altı dünyasından görüntüler.",
+    "images": [
+      {
+        "id": 1,
+        "url": "https://image.elitema.com.tr/db_images/276/39/4/whale-shark.jpg",
+        "alt": "Balina Köpekbalığı ile Dalış",
+        "title": "Balina Köpekbalığı"
+      },
+      {
+        "id": 2,
+        "url": "https://image.elitema.com.tr/db_images/276/39/5/manta.jpg",
+        "alt": "Manta Rayları",
+        "title": "Manta Rayları"
+      },
+      {
+        "id": 3,
+        "url": "https://image.elitema.com.tr/db_images/276/39/2/school-of-fish-with-underwater-photographer.jpg",
+        "alt": "Su Altı Fotoğrafçılığı",
+        "title": "Su Altı Fotoğrafçılığı"
+      },
+      {
+        "id": 4,
+        "url": "https://image.elitema.com.tr/db_images/276/39/3/scuba-diving-the-brothers-20141223t151446489z-sgbig.jpg",
+        "alt": "Brothers Adaları Dalışı",
+        "title": "Brothers Adaları"
+      },
+      {
+        "id": 5,
+        "url": "https://image.elitema.com.tr/db_images/276/21/10/whale-shark-maldives.jpg",
+        "alt": "Maldivler Balina Köpekbalığı",
+        "title": "Maldivler"
+      },
+      {
+        "id": 6,
+        "url": "https://image.elitema.com.tr/db_images/276/21/11/liveaboard-egypt-blueplanet-xxl.jpg",
+        "alt": "Liveaboard Dalış Teknesi",
+        "title": "Liveaboard Teknesi"
+      }
+    ]
+  }
+}

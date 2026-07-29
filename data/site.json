@@ -1,0 +1,44 @@
+{
+  "name": "Anemon Turizm",
+  "tagline": "Dünya'nın en iyi dalış noktalarında unutulmaz deneyimler",
+  "nav": [
+    { "label": "Ana Sayfa", "href": "/" },
+    { "label": "Hakkımızda", "href": "/about" },
+    { "label": "Hizmetlerimiz", "href": "/services" },
+    { "label": "İletişim", "href": "/contact" }
+  ],
+  "footer": {
+    "description": "Anemon Turizm, dünya çapında en iyi dalış destinasyonlarında profesyonel dalış turları ve PADI eğitimleri sunan köklü bir dalış operatörüdür.",
+    "columns": [
+      {
+        "title": "Kurumsal",
+        "links": [
+          { "label": "Hakkımızda", "href": "/about" },
+          { "label": "Hizmetlerimiz", "href": "/services" },
+          { "label": "İletişim", "href": "/contact" }
+        ]
+      },
+      {
+        "title": "Hizmetler",
+        "links": [
+          { "label": "Deneme Dalışı", "href": "/services" },
+          { "label": "Şelale Dalışı", "href": "/services" },
+          { "label": "Batık Dalışları", "href": "/services" },
+          { "label": "Mağara Dalışları", "href": "/services" },
+          { "label": "Şnorkel Turları", "href": "/services" },
+          { "label": "Havuz Dalışları", "href": "/services" },
+          { "label": "PADI Eğitimleri", "href": "/services" }
+        ]
+      },
+      {
+        "title": "Sosyal Medya",
+        "links": [
+          { "label": "Instagram", "href": "https://www.instagram.com/anemonturizm/" },
+          { "label": "Facebook", "href": "https://www.facebook.com/anemonturizm" },
+          { "label": "Twitter", "href": "https://twitter.com/anemonturizm" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Anemon Turizm. Tüm hakları saklıdır. TURSAB Belge No: A8428"
+  }
+}
