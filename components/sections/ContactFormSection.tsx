@@ -40,33 +40,54 @@ function validate(
 
 export interface ContactFormSectionProps {
   data: ContactContent["form"];
+  whatsappNumber?: string;
 }
 
-export function ContactFormSection({ data }: ContactFormSectionProps) {
+function buildWhatsappUrl(
+  number: string,
+  values: FormState,
+  fields: ContactContent["form"]["fields"],
+) {
+  const text = [
+    `${fields.name}: ${values.name}`,
+    `${fields.email}: ${values.email}`,
+    "",
+    `${fields.message}:`,
+    values.message,
+  ].join("\n");
+  return `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
+}
+
+export function ContactFormSection({
+  data,
+  whatsappNumber,
+}: ContactFormSectionProps) {
   const [values, setValues] = React.useState<FormState>({
     name: "",
     email: "",
     message: "",
   });
   const [errors, setErrors] = React.useState<FormErrors>({});
-  const [status, setStatus] = React.useState<"idle" | "loading" | "success">(
-    "idle",
-  );
+  const [status, setStatus] = React.useState<"idle" | "success">("idle");
 
   const update =
     (field: keyof FormState) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       setValues((prev) => ({ ...prev, [field]: e.target.value }));
 
-  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const nextErrors = validate(values, data.validation);
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
 
-    setStatus("loading");
-    // Placeholder: when a backend exists, POST `values` to the API here.
-    await new Promise((resolve) => setTimeout(resolve, 600));
+    if (!whatsappNumber) return;
+
+    window.open(
+      buildWhatsappUrl(whatsappNumber, values, data.fields),
+      "_blank",
+      "noopener,noreferrer",
+    );
     setStatus("success");
     setValues({ name: "", email: "", message: "" });
   };
@@ -172,7 +193,6 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
                 type="submit"
                 variant="primary"
                 size="md"
-                loading={status === "loading"}
                 className="w-full sm:w-auto"
               >
                 {data.submitLabel}

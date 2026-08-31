@@ -7,8 +7,8 @@
   "form": {
     "title": "Bize Mesaj Gönderin",
     "subtitle": "Sorularınızı ve isteklerinizi paylaşın, size en kısa sürede dönüş yapalım.",
-    "submitLabel": "Mesajı Gönder",
-    "successMessage": "Teşekkürler! Mesajınız alındı, en kısa sürede size dönüş yapacağız.",
+    "submitLabel": "Gönder",
+    "successMessage": "WhatsApp açılıyor, orada göndermeyi unutmayın!",
     "fields": {
       "name": "Adınız Soyadınız",
       "email": "E-posta",

@@ -7,8 +7,8 @@
   "form": {
     "title": "Schreiben Sie uns",
     "subtitle": "Teilen Sie uns Ihre Fragen und Wünsche mit — wir melden uns schnellstmöglich bei Ihnen.",
-    "submitLabel": "Nachricht senden",
-    "successMessage": "Vielen Dank! Ihre Nachricht ist eingegangen, wir melden uns in Kürze bei Ihnen.",
+    "submitLabel": "Senden",
+    "successMessage": "WhatsApp wird geöffnet — vergessen Sie nicht, dort auf Senden zu klicken!",
     "fields": {
       "name": "Vor- und Nachname",
       "email": "E-Mail",

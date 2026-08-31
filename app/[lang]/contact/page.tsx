@@ -40,6 +40,9 @@ export default async function ContactPage({
   const locale: Locale = lang;
 
   const contact = await getContactContent(locale);
+  const whatsappNumber = contact.info.items.find(
+    (item) => item.type === "whatsapp",
+  )?.value.replace(/\D/g, "");
 
   return (
     <>
@@ -48,7 +51,7 @@ export default async function ContactPage({
         title={contact.hero.title}
         subtitle={contact.hero.subtitle}
       />
-      <ContactFormSection data={contact.form} />
+      <ContactFormSection data={contact.form} whatsappNumber={whatsappNumber} />
       <ContactInfoSection data={contact.info} />
     </>
   );

@@ -7,8 +7,8 @@
   "form": {
     "title": "Send Us a Message",
     "subtitle": "Share your questions and requests, and we'll get back to you as soon as possible.",
-    "submitLabel": "Send Message",
-    "successMessage": "Thank you! Your message has been received — we'll get back to you shortly.",
+    "submitLabel": "Send",
+    "successMessage": "Opening WhatsApp — don't forget to hit send there!",
     "fields": {
       "name": "Full Name",
       "email": "Email",
