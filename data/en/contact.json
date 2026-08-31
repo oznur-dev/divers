@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "eyebrow": "Contact",
+    "title": "The Diving Adventure of Your Dreams Awaits",
+    "subtitle": "Get in touch with us for detailed information about our dive tours and training programs. We typically respond within one business day."
+  },
+  "form": {
+    "title": "Send Us a Message",
+    "subtitle": "Share your questions and requests, and we'll get back to you as soon as possible.",
+    "submitLabel": "Send Message",
+    "successMessage": "Thank you! Your message has been received — we'll get back to you shortly.",
+    "fields": {
+      "name": "Full Name",
+      "email": "Email",
+      "message": "Your Message"
+    },
+    "validation": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email address.",
+      "emailInvalid": "Please enter a valid email address.",
+      "messageTooShort": "Your message must be at least 10 characters."
+    },
+    "trust": {
+      "fast": { "title": "Fast Response", "subtitle": "Reply within 1 business day" },
+      "safe": { "title": "Secure", "subtitle": "Your information is protected" },
+      "support": { "title": "Professional Support", "subtitle": "Expert consultants" }
+    }
+  },
+  "info": {
+    "title": "Other Contact Channels",
+    "items": [
+      {
+        "id": 1,
+        "type": "email",
+        "label": "Email",
+        "value": "info@anemonturizm.com",
+        "href": "mailto:info@anemonturizm.com"
+      },
+      {
+        "id": 2,
+        "type": "phone",
+        "label": "Phone",
+        "value": "+90 242 352 13 35",
+        "href": "tel:+902423521335"
+      },
+      {
+        "id": 3,
+        "type": "whatsapp",
+        "label": "WhatsApp",
+        "value": "+90 538 268 48 57",
+        "href": "https://api.whatsapp.com/send?phone=905382684857"
+      },
+      {
+        "id": 4,
+        "type": "address",
+        "label": "Address",
+        "value": "Kemerağzı Mah. Yasar Sobutay Bulvarı No: 312/78 Aksu / Antalya, Türkiye"
+      }
+    ]
+  },
+  "seo": {
+    "title": "Contact",
+    "description": "Get in touch with us to plan the dive trip of your dreams. Reach our Antalya office, or get in touch via WhatsApp, phone, or email.",
+    "keywords": ["dive booking", "tour information", "Antalya", "contact", "WhatsApp"],
+    "ogTitle": "Contact · Anemon Turizm",
+    "ogDescription": "Get in touch with us for your dive tours. We typically respond within one business day."
+  }
+}

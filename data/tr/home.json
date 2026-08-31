@@ -4,7 +4,8 @@
     "title": "Denizlerin Derinliklerinde Unutulmaz Anılar",
     "subtitle": "Anemon Turizm, dünya çapında en iyi dalış noktalarında profesyonel rehberlik ve güvenli dalış deneyimleri sunan TURSAB belgeli tur operatörüdür.",
     "primaryCta": { "label": "Rezervasyon Yapın", "href": "/contact" },
-    "secondaryCta": { "label": "Turlarımız", "href": "/services" }
+    "secondaryCta": { "label": "Turlarımız", "href": "/services" },
+    "trustBadges": ["TURSAB Belgeli", "PADI Sertifikalı", "DAN Europe Sigortalı", "Dünya Çapında Hizmet"]
   },
   "servicesSection": {
     "eyebrow": "Hizmetlerimiz",
@@ -38,6 +39,7 @@
     ]
   },
   "contactCta": {
+    "eyebrow": "Hemen İletişime Geçin",
     "title": "Dalış Maceranız Başlasın!",
     "subtitle": "Hayalinizdeki dalış turunu planlamak için bizimle iletişime geçin. Genellikle bir iş günü içinde yanıt veriyoruz.",
     "cta": { "label": "İletişime Geçin", "href": "/contact" }
@@ -46,6 +48,7 @@
     "eyebrow": "Galeri",
     "title": "Su Altı Dünyasından Kareler",
     "subtitle": "Unutulmaz dalış deneyimlerimizden ve keşfettiğimiz muhteşem su altı dünyasından görüntüler.",
+    "photoCaption": "Su Altı Fotoğrafçılığı",
     "images": [
       {
         "id": 1,

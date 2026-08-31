@@ -13,6 +13,7 @@ export interface GallerySectionProps {
     eyebrow: string;
     title: string;
     subtitle: string;
+    photoCaption: string;
   };
   images: GalleryImage[];
 }
@@ -61,7 +62,7 @@ export function GallerySection({ heading, images }: GallerySectionProps) {
                       <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                       <path d="M2 12h20" />
                     </svg>
-                    Su Altı Fotoğrafçılığı
+                    {heading.photoCaption}
                   </p>
                 </div>
               </div>

@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "eyebrow": "Über uns",
+    "title": "Ein Team voller Leidenschaft fürs Tauchen",
+    "subtitle": "Anemon Turizm ist ein professioneller Reiseveranstalter, der dank jahrelanger Erfahrung und Leidenschaft für die Unterwasserwelt Tauchbegeisterten unvergessliche Erinnerungen schenkt."
+  },
+  "content": {
+    "title": "Unsere Geschichte",
+    "paragraphs": [
+      "Anemon Turizm wurde für all jene gegründet, die die magische Welt der Meere entdecken möchten. Wir sind ein TURSAB-lizenzierter, professioneller Tauchreiseveranstalter und bringen seit Jahren Taucher mit den schönsten Ecken der Unterwasserwelt zusammen.",
+      "Vom Roten Meer bis zu den Malediven, von den Bahamas bis zu den Azoren bieten wir sichere, komfortable und unvergessliche Taucherlebnisse an den prestigeträchtigsten Tauchplätzen der Welt. Jede Tour wird von unseren erfahrenen Guides mit größter Sorgfalt und hohem Qualitätsanspruch geplant.",
+      "Heute zählen wir dank unserer PADI-zertifizierten Ausbildungsprogramme, Liveaboard-Tauchtouren und privaten Tauchreisen zu den führenden Tauchveranstaltern der Türkei. Kundenzufriedenheit steht für uns an erster Stelle."
+    ]
+  },
+  "values": {
+    "eyebrow": "Unsere Werte",
+    "title": "Die Grundsätze, die uns auszeichnen",
+    "subtitle": "Diese Werte sind die Grundpfeiler unserer Servicequalität und unseres Kundenerlebnisses.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Sicherheit",
+        "description": "Wir legen bei jeder Tour größten Wert auf Sicherheitsstandards. DAN-Europe-Versicherung und professionelle Betreuung.",
+        "icon": "Shield"
+      },
+      {
+        "id": 2,
+        "title": "Erfahrung",
+        "description": "Mit jahrelanger Erfahrung wählen wir für Sie die besten Tauchplätze der Welt aus.",
+        "icon": "Sparkles"
+      },
+      {
+        "id": 3,
+        "title": "Transparenz",
+        "description": "Keine versteckten Kosten, klare Preisgestaltung. Sie wissen von Anfang an, was Sie zahlen.",
+        "icon": "Award"
+      },
+      {
+        "id": 4,
+        "title": "Kundenzufriedenheit",
+        "description": "Wir widmen jedem Gast persönliche Aufmerksamkeit und arbeiten daran, unvergessliche Erlebnisse zu schaffen.",
+        "icon": "TrendingUp"
+      }
+    ]
+  },
+  "seo": {
+    "title": "Über uns",
+    "description": "Anemon Turizm bietet tauchbegeisterten Reisenden seit Jahren professionelle Betreuung und erstklassigen Service, damit Sie die Magie der Unterwasserwelt entdecken können. TURSAB-lizenzierter, PADI-zertifizierter Tauchveranstalter.",
+    "keywords": ["Tauchveranstalter", "TURSAB-lizenziert", "PADI-Tauchlehrer", "professionelles Tauchen"],
+    "ogTitle": "Über uns · Anemon Turizm",
+    "ogDescription": "TURSAB-lizenzierter, PADI-zertifizierter professioneller Tauchveranstalter. Sichere und unvergessliche Tauchabenteuer."
+  }
+}

@@ -21,16 +21,19 @@ interface FormErrors {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function validate(values: FormState): FormErrors {
+function validate(
+  values: FormState,
+  validation: ContactContent["form"]["validation"],
+): FormErrors {
   const errors: FormErrors = {};
-  if (!values.name.trim()) errors.name = "Lütfen adınızı giriniz.";
+  if (!values.name.trim()) errors.name = validation.nameRequired;
   if (!values.email.trim()) {
-    errors.email = "Lütfen e-posta adresinizi giriniz.";
+    errors.email = validation.emailRequired;
   } else if (!EMAIL_RE.test(values.email.trim())) {
-    errors.email = "Lütfen geçerli bir e-posta giriniz.";
+    errors.email = validation.emailInvalid;
   }
   if (values.message.trim().length < 10) {
-    errors.message = "Mesaj en az 10 karakter olmalıdır.";
+    errors.message = validation.messageTooShort;
   }
   return errors;
 }
@@ -57,7 +60,7 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const nextErrors = validate(values);
+    const nextErrors = validate(values, data.validation);
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
 
@@ -85,8 +88,8 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </span>
                 <div>
-                  <p className="font-semibold text-foreground">Hızlı Yanıt</p>
-                  <p className="text-xs text-muted-foreground">1 iş günü içinde dönüş</p>
+                  <p className="font-semibold text-foreground">{data.trust.fast.title}</p>
+                  <p className="text-xs text-muted-foreground">{data.trust.fast.subtitle}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-sm">
@@ -94,8 +97,8 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </span>
                 <div>
-                  <p className="font-semibold text-foreground">Güvenli</p>
-                  <p className="text-xs text-muted-foreground">Bilgileriniz korunur</p>
+                  <p className="font-semibold text-foreground">{data.trust.safe.title}</p>
+                  <p className="text-xs text-muted-foreground">{data.trust.safe.subtitle}</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-sm">
@@ -103,8 +106,8 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
                 </span>
                 <div>
-                  <p className="font-semibold text-foreground">Profesyonel Destek</p>
-                  <p className="text-xs text-muted-foreground">Uzman danışmanlar</p>
+                  <p className="font-semibold text-foreground">{data.trust.support.title}</p>
+                  <p className="text-xs text-muted-foreground">{data.trust.support.subtitle}</p>
                 </div>
               </div>
             </div>
@@ -122,7 +125,7 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
             
             <div className="relative">
               <Input
-                label="Adınız Soyadınız"
+                label={data.fields.name}
                 name="name"
                 autoComplete="name"
                 value={values.name}
@@ -133,7 +136,7 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
             </div>
             <div className="relative">
               <Input
-                label="E-posta"
+                label={data.fields.email}
                 name="email"
                 type="email"
                 autoComplete="email"
@@ -145,7 +148,7 @@ export function ContactFormSection({ data }: ContactFormSectionProps) {
             </div>
             <div className="relative">
               <Textarea
-                label="Mesajınız"
+                label={data.fields.message}
                 name="message"
                 value={values.message}
                 onChange={update("message")}

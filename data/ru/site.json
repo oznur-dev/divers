@@ -1,0 +1,76 @@
+{
+  "name": "Anemon Turizm",
+  "tagline": "Незабываемые впечатления на лучших дайв-сайтах мира",
+  "nav": [
+    { "label": "Главная", "href": "/" },
+    { "label": "О нас", "href": "/about" },
+    { "label": "Услуги", "href": "/services" },
+    { "label": "Контакты", "href": "/contact" }
+  ],
+  "ui": {
+    "contactCta": "Контакты",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню",
+    "localeSwitcherLabel": "Язык"
+  },
+  "whatsapp": {
+    "phone": "905382684857",
+    "reserveLabel": "Забронировать",
+    "reserveMessageTemplate": "Здравствуйте, я хотел(а) бы забронировать {service}. Какие дни свободны?"
+  },
+  "footer": {
+    "description": "Anemon Turizm — авторитетный дайвинг-оператор, предлагающий профессиональные дайв-туры и курсы PADI на лучших дайвинг-направлениях мира.",
+    "license": "Лицензия TURSAB № A8428",
+    "columns": [
+      {
+        "title": "Компания",
+        "links": [
+          { "label": "О нас", "href": "/about" },
+          { "label": "Услуги", "href": "/services" },
+          { "label": "Контакты", "href": "/contact" }
+        ]
+      },
+      {
+        "title": "Услуги",
+        "links": [
+          { "label": "Ознакомительное погружение", "href": "/services" },
+          { "label": "Погружение у водопада", "href": "/services" },
+          { "label": "Дайвинг на затонувших кораблях", "href": "/services" },
+          { "label": "Пещерный дайвинг", "href": "/services" },
+          { "label": "Туры со снорклингом", "href": "/services" },
+          { "label": "Погружения в бассейне", "href": "/services" },
+          { "label": "Курсы PADI", "href": "/services" }
+        ]
+      },
+      {
+        "title": "Социальные сети",
+        "links": [
+          { "label": "Instagram", "href": "https://www.instagram.com/anemonturizm/" },
+          { "label": "Facebook", "href": "https://www.facebook.com/anemonturizm" },
+          { "label": "Twitter", "href": "https://twitter.com/anemonturizm" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Anemon Turizm. Все права защищены. Лицензия TURSAB № A8428"
+  },
+  "seo": {
+    "title": "Anemon Divers — Профессиональные дайв-туры и курсы PADI",
+    "description": "Anemon Turizm — дайвинг-оператор с лицензией TURSAB. Профессиональное сопровождение, безопасные погружения и программы сертификации PADI в Красном море, на Мальдивах и на лучших дайв-сайтах мира.",
+    "keywords": [
+      "дайв-туры",
+      "курс PADI",
+      "дайвинг Красное море",
+      "дайвинг Мальдивы",
+      "лайвабоард",
+      "TURSAB",
+      "дайвинг-оператор",
+      "подводное плавание",
+      "дайвинг на затонувших кораблях",
+      "подводная фотография",
+      "сертификат по дайвингу",
+      "страховка DAN"
+    ],
+    "ogTitle": "Anemon Turizm — Профессиональные дайв-туры",
+    "ogDescription": "Дайвинг-оператор с лицензией TURSAB — Красное море, Мальдивы и не только."
+  }
+}

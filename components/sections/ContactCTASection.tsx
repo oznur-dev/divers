@@ -1,12 +1,15 @@
 import { SectionWrapper } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/Motion";
 import type { HomeContent } from "@/lib/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localizeHref } from "@/lib/i18n/utils";
 
 export interface ContactCTASectionProps {
   data: HomeContent["contactCta"];
+  locale: Locale;
 }
 
-export function ContactCTASection({ data }: ContactCTASectionProps) {
+export function ContactCTASection({ data, locale }: ContactCTASectionProps) {
   return (
     <SectionWrapper spacing="md">
       <FadeIn>
@@ -39,7 +42,7 @@ export function ContactCTASection({ data }: ContactCTASectionProps) {
           <div className="relative z-10">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white backdrop-blur-sm">
               <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-white" />
-              Hemen İletişime Geçin
+              {data.eyebrow}
             </span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
               {data.title}
@@ -49,7 +52,7 @@ export function ContactCTASection({ data }: ContactCTASectionProps) {
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
-                href={data.cta.href}
+                href={localizeHref(locale, data.cta.href)}
                 className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-white px-7 text-base font-semibold text-ocean-deep shadow-xl shadow-ocean-deep/30 ring-1 ring-white/40 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-2xl hover:shadow-ocean-deep/40 hover:text-ocean-dark"
               >
                 {data.cta.label}

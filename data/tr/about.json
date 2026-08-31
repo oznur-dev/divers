@@ -42,5 +42,12 @@
         "icon": "TrendingUp"
       }
     ]
+  },
+  "seo": {
+    "title": "Hakkımızda",
+    "description": "Anemon Turizm, yıllardır dalış tutkunu gezginlere profesyonel rehberlik ve en kaliteli hizmeti sunarak, su altı dünyasının büyüsünü keşfetmenizi sağlıyor. TURSAB belgeli, PADI sertifikalı dalış operatörü.",
+    "keywords": ["dalış operatörü", "TURSAB belgeli", "PADI eğitmen", "profesyonel dalış"],
+    "ogTitle": "Hakkımızda · Anemon Turizm",
+    "ogDescription": "TURSAB belgeli, PADI sertifikalı profesyonel dalış operatörü. Güvenli ve unutulmaz dalış maceraları."
   }
 }

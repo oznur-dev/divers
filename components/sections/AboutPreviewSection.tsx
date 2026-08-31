@@ -3,12 +3,15 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { SectionWrapper } from "@/components/ui/Container";
 import { FadeIn, Stagger, StaggerItem } from "@/components/ui/Motion";
 import type { HomeContent } from "@/lib/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localizeHref } from "@/lib/i18n/utils";
 
 export interface AboutPreviewSectionProps {
   data: HomeContent["aboutPreview"];
+  locale: Locale;
 }
 
-export function AboutPreviewSection({ data }: AboutPreviewSectionProps) {
+export function AboutPreviewSection({ data, locale }: AboutPreviewSectionProps) {
   return (
     <div className="relative overflow-hidden">
       {/* Decorative blobs */}
@@ -30,7 +33,7 @@ export function AboutPreviewSection({ data }: AboutPreviewSectionProps) {
                 {data.body}
               </p>
               <div className="mt-7">
-                <ButtonLink href={data.cta.href} variant="primary" size="md">
+                <ButtonLink href={localizeHref(locale, data.cta.href)} variant="primary" size="md">
                   {data.cta.label}
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12" />

@@ -1,0 +1,76 @@
+{
+  "name": "Anemon Turizm",
+  "tagline": "Unvergessliche Erlebnisse an den besten Tauchplätzen der Welt",
+  "nav": [
+    { "label": "Startseite", "href": "/" },
+    { "label": "Über uns", "href": "/about" },
+    { "label": "Leistungen", "href": "/services" },
+    { "label": "Kontakt", "href": "/contact" }
+  ],
+  "ui": {
+    "contactCta": "Kontakt",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "localeSwitcherLabel": "Sprache"
+  },
+  "whatsapp": {
+    "phone": "905382684857",
+    "reserveLabel": "Reservieren",
+    "reserveMessageTemplate": "Hallo, ich möchte eine Reservierung für {service} vornehmen. Welche Tage sind verfügbar?"
+  },
+  "footer": {
+    "description": "Anemon Turizm ist ein etablierter Tauchveranstalter, der professionelle Tauchtouren und PADI-Kurse an den besten Tauchdestinationen der Welt anbietet.",
+    "license": "TURSAB-Lizenznr.: A8428",
+    "columns": [
+      {
+        "title": "Unternehmen",
+        "links": [
+          { "label": "Über uns", "href": "/about" },
+          { "label": "Leistungen", "href": "/services" },
+          { "label": "Kontakt", "href": "/contact" }
+        ]
+      },
+      {
+        "title": "Leistungen",
+        "links": [
+          { "label": "Discover Dive", "href": "/services" },
+          { "label": "Wasserfall-Tauchgang", "href": "/services" },
+          { "label": "Wracktauchen", "href": "/services" },
+          { "label": "Höhlentauchen", "href": "/services" },
+          { "label": "Schnorcheltouren", "href": "/services" },
+          { "label": "Pool-Tauchgänge", "href": "/services" },
+          { "label": "PADI-Kurse", "href": "/services" }
+        ]
+      },
+      {
+        "title": "Soziale Medien",
+        "links": [
+          { "label": "Instagram", "href": "https://www.instagram.com/anemonturizm/" },
+          { "label": "Facebook", "href": "https://www.facebook.com/anemonturizm" },
+          { "label": "Twitter", "href": "https://twitter.com/anemonturizm" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Anemon Turizm. Alle Rechte vorbehalten. TURSAB-Lizenznr.: A8428"
+  },
+  "seo": {
+    "title": "Anemon Divers — Professionelle Tauchtouren & PADI-Kurse",
+    "description": "Anemon Turizm ist ein TURSAB-lizenzierter Tauchveranstalter. Professionelle Betreuung, sichere Taucherlebnisse und PADI-Zertifizierungsprogramme im Roten Meer, auf den Malediven und an den besten Tauchplätzen der Welt.",
+    "keywords": [
+      "Tauchtouren",
+      "PADI-Kurs",
+      "Tauchen Rotes Meer",
+      "Tauchen Malediven",
+      "Liveaboard",
+      "TURSAB",
+      "Tauchveranstalter",
+      "Gerätetauchen",
+      "Wracktauchen",
+      "Unterwasserfotografie",
+      "Tauchzertifikat",
+      "DAN-Versicherung"
+    ],
+    "ogTitle": "Anemon Turizm — Professionelle Tauchtouren",
+    "ogDescription": "TURSAB-lizenzierter Tauchveranstalter — Rotes Meer, Malediven und mehr."
+  }
+}

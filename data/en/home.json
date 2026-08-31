@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "eyebrow": "Dive Tours & PADI Courses",
+    "title": "Unforgettable Memories in the Deep Blue",
+    "subtitle": "Anemon Turizm is a TURSAB-licensed tour operator offering professional guidance and safe diving experiences at the world's best dive sites.",
+    "primaryCta": { "label": "Book Now", "href": "/contact" },
+    "secondaryCta": { "label": "Our Tours", "href": "/services" },
+    "trustBadges": ["TURSAB Licensed", "PADI Certified", "DAN Europe Insured", "Worldwide Service"]
+  },
+  "servicesSection": {
+    "eyebrow": "Our Services",
+    "title": "Professional Diving Experiences",
+    "subtitle": "From the Red Sea to the Maldives, tailor-made tours and courses at the world's best dive sites."
+  },
+  "aboutPreview": {
+    "eyebrow": "Why Anemon Turizm",
+    "title": "Safe and Unforgettable Diving Adventures",
+    "body": "For years we've offered diving enthusiasts professional guidance and top-quality service, letting you discover the magic of the underwater world.",
+    "cta": { "label": "About Us", "href": "/about" },
+    "features": [
+      {
+        "id": 1,
+        "title": "Destinations Worldwide",
+        "description": "The Red Sea, the Maldives, the Bahamas, and more... Discover the world's best dive sites.",
+        "icon": "Globe"
+      },
+      {
+        "id": 2,
+        "title": "Best Price Guarantee",
+        "description": "Find the same tour cheaper elsewhere and we'll refund the difference. No hidden fees, full transparency.",
+        "icon": "TrendingUp"
+      },
+      {
+        "id": 3,
+        "title": "Free DAN Insurance",
+        "description": "DAN Europe diving accident insurance included on bookings of €1,000 or more.",
+        "icon": "Shield"
+      }
+    ]
+  },
+  "contactCta": {
+    "eyebrow": "Get In Touch Now",
+    "title": "Let Your Diving Adventure Begin!",
+    "subtitle": "Contact us to plan the dive trip of your dreams. We typically respond within one business day.",
+    "cta": { "label": "Get In Touch", "href": "/contact" }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "Moments from the Underwater World",
+    "subtitle": "Images from our unforgettable diving experiences and the stunning underwater world we've explored.",
+    "photoCaption": "Underwater Photography",
+    "images": [
+      {
+        "id": 1,
+        "url": "https://image.elitema.com.tr/db_images/276/39/4/whale-shark.jpg",
+        "alt": "Diving with a Whale Shark",
+        "title": "Whale Shark"
+      },
+      {
+        "id": 2,
+        "url": "https://image.elitema.com.tr/db_images/276/39/5/manta.jpg",
+        "alt": "Manta Rays",
+        "title": "Manta Rays"
+      },
+      {
+        "id": 3,
+        "url": "https://image.elitema.com.tr/db_images/276/39/2/school-of-fish-with-underwater-photographer.jpg",
+        "alt": "Underwater Photography",
+        "title": "Underwater Photography"
+      },
+      {
+        "id": 4,
+        "url": "https://image.elitema.com.tr/db_images/276/39/3/scuba-diving-the-brothers-20141223t151446489z-sgbig.jpg",
+        "alt": "Diving at the Brothers Islands",
+        "title": "Brothers Islands"
+      },
+      {
+        "id": 5,
+        "url": "https://image.elitema.com.tr/db_images/276/21/10/whale-shark-maldives.jpg",
+        "alt": "Whale Shark in the Maldives",
+        "title": "Maldives"
+      },
+      {
+        "id": 6,
+        "url": "https://image.elitema.com.tr/db_images/276/21/11/liveaboard-egypt-blueplanet-xxl.jpg",
+        "alt": "Liveaboard Dive Boat",
+        "title": "Liveaboard Boat"
+      }
+    ]
+  }
+}

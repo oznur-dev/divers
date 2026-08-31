@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Discover Dive",
+    "description": "Опыт не требуется. Безопасное и увлекательное первое погружение для новичков.",
+    "icon": "Compass",
+    "image": "/assets/discover.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Waterfall Dive",
+    "description": "Уникальное погружение под знаменитым водопадом Дюден в Анталье, где встречаются пресная и солёная вода в волшебной обстановке.",
+    "icon": "Droplets",
+    "image": "/assets/duden.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Wreck Dive",
+    "description": "Индивидуальные туры к затонувшему St. Didier и другим историческим кораблекрушениям. Захватывающие открытия для опытных дайверов.",
+    "icon": "Anchor",
+    "image": "/assets/wreck.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Cave Dive",
+    "description": "Техническое погружение в скрытых пещерных системах Средиземного моря с профессиональным сопровождением для продвинутых дайверов.",
+    "icon": "Mountain",
+    "image": "/assets/cave.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Snorkeling",
+    "description": "Исследуйте подводный мир без сертификата дайвера. Безопасные и увлекательные туры со снорклингом для всей семьи.",
+    "icon": "Fish",
+    "image": "/assets/snorkel.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Pool Dive",
+    "description": "Занятия дайвингом и практика в бассейне. Отработка базовых навыков в контролируемых условиях.",
+    "icon": "WavesLadder",
+    "image": "/assets/pool.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Courses",
+    "description": "Все программы сертификации PADI — от Open Water Diver до Technical Diving — под руководством профессиональных инструкторов.",
+    "icon": "Award",
+    "image": "/assets/Banner.jpg"
+  }
+]

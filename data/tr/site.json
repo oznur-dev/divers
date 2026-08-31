@@ -1,14 +1,26 @@
 {
   "name": "Anemon Turizm",
-  "tagline": "Dünya'nın en iyi dalış noktalarında unutulmaz deneyimler",
+  "tagline": "Dünyanın en iyi dalış noktalarında unutulmaz deneyimler",
   "nav": [
     { "label": "Ana Sayfa", "href": "/" },
     { "label": "Hakkımızda", "href": "/about" },
     { "label": "Hizmetlerimiz", "href": "/services" },
     { "label": "İletişim", "href": "/contact" }
   ],
+  "ui": {
+    "contactCta": "İletişim",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "localeSwitcherLabel": "Dil"
+  },
+  "whatsapp": {
+    "phone": "905382684857",
+    "reserveLabel": "Rezerve Et",
+    "reserveMessageTemplate": "Merhaba, {service} için rezervasyon yapmak istiyorum, hangi günler müsait?"
+  },
   "footer": {
     "description": "Anemon Turizm, dünya çapında en iyi dalış destinasyonlarında profesyonel dalış turları ve PADI eğitimleri sunan köklü bir dalış operatörüdür.",
+    "license": "TURSAB Belge No: A8428",
     "columns": [
       {
         "title": "Kurumsal",
@@ -40,5 +52,25 @@
       }
     ],
     "copyright": "© 2026 Anemon Turizm. Tüm hakları saklıdır. TURSAB Belge No: A8428"
+  },
+  "seo": {
+    "title": "Anemon Divers — Profesyonel Dalış Turları & PADI Eğitimleri",
+    "description": "Anemon Turizm, TURSAB belgeli dalış operatörüdür. Kızıldeniz, Maldivler ve dünyanın en iyi dalış noktalarında profesyonel rehberlik, güvenli dalış deneyimleri ve PADI sertifikasyon programları.",
+    "keywords": [
+      "dalış turları",
+      "PADI eğitimi",
+      "Kızıldeniz dalış",
+      "Maldivler dalış",
+      "liveaboard",
+      "TURSAB",
+      "dalış operatörü",
+      "scuba diving",
+      "batık dalışları",
+      "su altı fotoğrafçılığı",
+      "dalış sertifikası",
+      "DAN sigorta"
+    ],
+    "ogTitle": "Anemon Turizm — Profesyonel Dalış Turları",
+    "ogDescription": "TURSAB belgeli dalış operatörü — Kızıldeniz, Maldivler ve daha fazlası."
   }
 }

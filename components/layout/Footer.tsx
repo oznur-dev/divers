@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import type { SiteContent } from "@/lib/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localizeHref } from "@/lib/i18n/utils";
 
 export interface FooterProps {
+  locale: Locale;
   site: SiteContent;
 }
 
-export function Footer({ site }: FooterProps) {
+export function Footer({ locale, site }: FooterProps) {
   return (
     <footer className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-sky-50/50 to-cyan-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-sky-950/40">
       {/* Top accent wave */}
@@ -25,7 +28,7 @@ export function Footer({ site }: FooterProps) {
         <div className="relative grid gap-10 py-16 sm:grid-cols-2 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link
-              href="/"
+              href={localizeHref(locale, "/")}
               aria-label={site.name}
               className="group inline-flex items-center text-base font-bold tracking-tight"
             >
@@ -92,7 +95,7 @@ export function Footer({ site }: FooterProps) {
                 {column.links.map((link) => (
                   <li key={link.label}>
                     <Link
-                      href={link.href}
+                      href={localizeHref(locale, link.href)}
                       className="group inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-ocean-medium dark:hover:text-ocean-light"
                     >
                       <span className="h-1 w-1 rounded-full bg-ocean-medium/0 transition-all group-hover:w-3 group-hover:bg-ocean-medium" />
@@ -111,7 +114,7 @@ export function Footer({ site }: FooterProps) {
           </p>
           <p className="flex items-center gap-2 text-xs text-muted-foreground">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
-            TURSAB Belge No: A8428
+            {site.footer.license}
           </p>
         </div>
       </Container>

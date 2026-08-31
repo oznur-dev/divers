@@ -1,14 +1,15 @@
 import { ServiceCard } from "@/components/cards/ServiceCard";
 import { SectionWrapper } from "@/components/ui/Container";
 import { FadeIn, Stagger, StaggerItem } from "@/components/ui/Motion";
-import type { HomeContent, Service } from "@/lib/types";
+import type { HomeContent, Service, SiteContent } from "@/lib/types";
 
 export interface ServicesSectionProps {
   heading: HomeContent["servicesSection"];
   services: Service[];
+  whatsapp?: SiteContent["whatsapp"];
 }
 
-export function ServicesSection({ heading, services }: ServicesSectionProps) {
+export function ServicesSection({ heading, services, whatsapp }: ServicesSectionProps) {
   return (
     <div className="relative overflow-hidden">
       {/* Background pattern */}
@@ -37,7 +38,7 @@ export function ServicesSection({ heading, services }: ServicesSectionProps) {
               key={service.id}
               className={index === services.length - 1 ? "sm:col-span-2 lg:col-span-3" : ""}
             >
-              <ServiceCard service={service} />
+              <ServiceCard service={service} whatsapp={whatsapp} />
             </StaggerItem>
           ))}
         </Stagger>

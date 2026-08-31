@@ -1,0 +1,76 @@
+{
+  "name": "Anemon Turizm",
+  "tagline": "Unforgettable experiences at the world's best dive sites",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "About Us", "href": "/about" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "ui": {
+    "contactCta": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "localeSwitcherLabel": "Language"
+  },
+  "whatsapp": {
+    "phone": "905382684857",
+    "reserveLabel": "Reserve",
+    "reserveMessageTemplate": "Hello, I'd like to make a reservation for {service}. Which days are available?"
+  },
+  "footer": {
+    "description": "Anemon Turizm is a well-established dive operator offering professional diving tours and PADI courses at the world's best dive destinations.",
+    "license": "TURSAB License No: A8428",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "/about" },
+          { "label": "Services", "href": "/services" },
+          { "label": "Contact", "href": "/contact" }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Discover Dive", "href": "/services" },
+          { "label": "Waterfall Dive", "href": "/services" },
+          { "label": "Wreck Dives", "href": "/services" },
+          { "label": "Cave Dives", "href": "/services" },
+          { "label": "Snorkeling Tours", "href": "/services" },
+          { "label": "Pool Dives", "href": "/services" },
+          { "label": "PADI Courses", "href": "/services" }
+        ]
+      },
+      {
+        "title": "Social Media",
+        "links": [
+          { "label": "Instagram", "href": "https://www.instagram.com/anemonturizm/" },
+          { "label": "Facebook", "href": "https://www.facebook.com/anemonturizm" },
+          { "label": "Twitter", "href": "https://twitter.com/anemonturizm" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Anemon Turizm. All rights reserved. TURSAB License No: A8428"
+  },
+  "seo": {
+    "title": "Anemon Divers — Professional Dive Tours & PADI Courses",
+    "description": "Anemon Turizm is a TURSAB-licensed dive operator. Professional guidance, safe diving experiences, and PADI certification programs at the Red Sea, the Maldives, and the world's best dive sites.",
+    "keywords": [
+      "dive tours",
+      "PADI course",
+      "Red Sea diving",
+      "Maldives diving",
+      "liveaboard",
+      "TURSAB",
+      "dive operator",
+      "scuba diving",
+      "wreck dives",
+      "underwater photography",
+      "dive certification",
+      "DAN insurance"
+    ],
+    "ogTitle": "Anemon Turizm — Professional Dive Tours",
+    "ogDescription": "TURSAB-licensed dive operator — the Red Sea, the Maldives, and more."
+  }
+}

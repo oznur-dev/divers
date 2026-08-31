@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Discover Dive",
+    "description": "Keine Erfahrung erforderlich. Ein sicherer und unterhaltsamer Einstieg für Erst-Taucher.",
+    "icon": "Compass",
+    "image": "/assets/discover.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Waterfall Dive",
+    "description": "Ein einzigartiges Taucherlebnis unter dem berühmten Düden-Wasserfall in Antalya, wo Süß- und Salzwasser in magischer Kulisse aufeinandertreffen.",
+    "icon": "Droplets",
+    "image": "/assets/duden.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Wreck Dive",
+    "description": "Private Tauchtouren zum St. Didier und weiteren historischen Wracks. Spannende Entdeckungen für erfahrene Taucher.",
+    "icon": "Anchor",
+    "image": "/assets/wreck.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Cave Dive",
+    "description": "Technisches Tauchen in den verborgenen Höhlensystemen des Mittelmeers, mit professioneller Betreuung für fortgeschrittene Taucher.",
+    "icon": "Mountain",
+    "image": "/assets/cave.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Snorkeling",
+    "description": "Entdecken Sie die Unterwasserwelt ganz ohne Tauchschein. Sichere, unterhaltsame Schnorcheltouren für die ganze Familie.",
+    "icon": "Fish",
+    "image": "/assets/snorkel.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Pool Dive",
+    "description": "Tauchunterricht und Übungseinheiten im Pool. Grundlegende Fertigkeiten in kontrollierter Umgebung erlernen.",
+    "icon": "WavesLadder",
+    "image": "/assets/pool.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Courses",
+    "description": "Alle PADI-Zertifizierungsprogramme, vom Open Water Diver bis zum Technical Diving, unter Anleitung professioneller Ausbilder.",
+    "icon": "Award",
+    "image": "/assets/Banner.jpg"
+  }
+]

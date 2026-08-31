@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "eyebrow": "Tauchtouren & PADI-Kurse",
+    "title": "Unvergessliche Momente in den Tiefen der Meere",
+    "subtitle": "Anemon Turizm ist ein TURSAB-lizenzierter Reiseveranstalter, der professionelle Betreuung und sichere Taucherlebnisse an den besten Tauchplätzen der Welt bietet.",
+    "primaryCta": { "label": "Jetzt buchen", "href": "/contact" },
+    "secondaryCta": { "label": "Unsere Touren", "href": "/services" },
+    "trustBadges": ["TURSAB-lizenziert", "PADI-zertifiziert", "DAN Europe versichert", "Weltweiter Service"]
+  },
+  "servicesSection": {
+    "eyebrow": "Unsere Leistungen",
+    "title": "Professionelle Taucherlebnisse",
+    "subtitle": "Vom Roten Meer bis zu den Malediven — maßgeschneiderte Touren und Kurse an den besten Tauchplätzen der Welt."
+  },
+  "aboutPreview": {
+    "eyebrow": "Warum Anemon Turizm",
+    "title": "Sichere und unvergessliche Tauchabenteuer",
+    "body": "Seit Jahren bieten wir tauchbegeisterten Reisenden professionelle Betreuung und erstklassigen Service, damit Sie die Magie der Unterwasserwelt entdecken können.",
+    "cta": { "label": "Über uns", "href": "/about" },
+    "features": [
+      {
+        "id": 1,
+        "title": "Reiseziele weltweit",
+        "description": "Rotes Meer, Malediven, Bahamas und mehr … Entdecken Sie die besten Tauchplätze der Welt.",
+        "icon": "Globe"
+      },
+      {
+        "id": 2,
+        "title": "Bestpreisgarantie",
+        "description": "Finden Sie dieselbe Tour günstiger, erstatten wir Ihnen die Differenz. Keine versteckten Kosten, volle Transparenz.",
+        "icon": "TrendingUp"
+      },
+      {
+        "id": 3,
+        "title": "Kostenlose DAN-Versicherung",
+        "description": "DAN-Europe-Tauchunfallversicherung inklusive bei Buchungen ab 1.000 €.",
+        "icon": "Shield"
+      }
+    ]
+  },
+  "contactCta": {
+    "eyebrow": "Jetzt Kontakt aufnehmen",
+    "title": "Lassen Sie Ihr Tauchabenteuer beginnen!",
+    "subtitle": "Kontaktieren Sie uns, um die Tauchreise Ihrer Träume zu planen. Wir antworten in der Regel innerhalb eines Werktags.",
+    "cta": { "label": "Kontakt aufnehmen", "href": "/contact" }
+  },
+  "gallery": {
+    "eyebrow": "Galerie",
+    "title": "Momente aus der Unterwasserwelt",
+    "subtitle": "Bilder aus unseren unvergesslichen Taucherlebnissen und der beeindruckenden Unterwasserwelt, die wir erkundet haben.",
+    "photoCaption": "Unterwasserfotografie",
+    "images": [
+      {
+        "id": 1,
+        "url": "https://image.elitema.com.tr/db_images/276/39/4/whale-shark.jpg",
+        "alt": "Tauchen mit einem Walhai",
+        "title": "Walhai"
+      },
+      {
+        "id": 2,
+        "url": "https://image.elitema.com.tr/db_images/276/39/5/manta.jpg",
+        "alt": "Mantarochen",
+        "title": "Mantarochen"
+      },
+      {
+        "id": 3,
+        "url": "https://image.elitema.com.tr/db_images/276/39/2/school-of-fish-with-underwater-photographer.jpg",
+        "alt": "Unterwasserfotografie",
+        "title": "Unterwasserfotografie"
+      },
+      {
+        "id": 4,
+        "url": "https://image.elitema.com.tr/db_images/276/39/3/scuba-diving-the-brothers-20141223t151446489z-sgbig.jpg",
+        "alt": "Tauchgang an den Brothers-Inseln",
+        "title": "Brothers-Inseln"
+      },
+      {
+        "id": 5,
+        "url": "https://image.elitema.com.tr/db_images/276/21/10/whale-shark-maldives.jpg",
+        "alt": "Walhai auf den Malediven",
+        "title": "Malediven"
+      },
+      {
+        "id": 6,
+        "url": "https://image.elitema.com.tr/db_images/276/21/11/liveaboard-egypt-blueplanet-xxl.jpg",
+        "alt": "Liveaboard-Tauchboot",
+        "title": "Liveaboard-Boot"
+      }
+    ]
+  }
+}

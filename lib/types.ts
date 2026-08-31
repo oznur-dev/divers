@@ -49,6 +49,14 @@ export interface CTA {
   href: string;
 }
 
+export interface SeoContent {
+  title: string;
+  description: string;
+  keywords?: string[];
+  ogTitle?: string;
+  ogDescription?: string;
+}
+
 /* ---------- Page-level content ---------- */
 
 export interface HomeContent {
@@ -58,6 +66,7 @@ export interface HomeContent {
     subtitle: string;
     primaryCta: CTA;
     secondaryCta: CTA;
+    trustBadges: string[];
   };
   servicesSection: {
     eyebrow: string;
@@ -72,6 +81,7 @@ export interface HomeContent {
     features: Feature[];
   };
   contactCta: {
+    eyebrow: string;
     title: string;
     subtitle: string;
     cta: CTA;
@@ -80,6 +90,7 @@ export interface HomeContent {
     eyebrow: string;
     title: string;
     subtitle: string;
+    photoCaption: string;
     images: {
       id: number;
       url: string;
@@ -105,6 +116,7 @@ export interface AboutContent {
     subtitle: string;
     items: Value[];
   };
+  seo: SeoContent;
 }
 
 export interface ServicesPageContent {
@@ -113,10 +125,14 @@ export interface ServicesPageContent {
     title: string;
     subtitle: string;
   };
+  seo: SeoContent;
 }
+
+export type ContactInfoType = "email" | "phone" | "whatsapp" | "address";
 
 export interface ContactInfoItem {
   id: number;
+  type: ContactInfoType;
   label: string;
   value: string;
   href?: string;
@@ -133,11 +149,28 @@ export interface ContactContent {
     subtitle: string;
     submitLabel: string;
     successMessage: string;
+    fields: {
+      name: string;
+      email: string;
+      message: string;
+    };
+    validation: {
+      nameRequired: string;
+      emailRequired: string;
+      emailInvalid: string;
+      messageTooShort: string;
+    };
+    trust: {
+      fast: { title: string; subtitle: string };
+      safe: { title: string; subtitle: string };
+      support: { title: string; subtitle: string };
+    };
   };
   info: {
     title: string;
     items: ContactInfoItem[];
   };
+  seo: SeoContent;
 }
 
 /* ---------- Site-wide ---------- */
@@ -151,12 +184,25 @@ export interface SiteContent {
   name: string;
   tagline: string;
   nav: NavLink[];
+  ui: {
+    contactCta: string;
+    openMenu: string;
+    closeMenu: string;
+    localeSwitcherLabel: string;
+  };
+  whatsapp: {
+    phone: string;
+    reserveLabel: string;
+    reserveMessageTemplate: string;
+  };
   footer: {
     description: string;
+    license: string;
     columns: {
       title: string;
       links: NavLink[];
     }[];
     copyright: string;
   };
+  seo: SeoContent;
 }

@@ -6,12 +6,17 @@ import { usePathname } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
+import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher";
 import { cn } from "@/lib/utils";
-import type { NavLink } from "@/lib/types";
+import type { NavLink, SiteContent } from "@/lib/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localizeHref } from "@/lib/i18n/utils";
 
 export interface NavbarProps {
+  locale: Locale;
   brandName: string;
   links: NavLink[];
+  ui: SiteContent["ui"];
 }
 
 /* Subscribe to window scroll via useSyncExternalStore (no setState-in-effect). */
@@ -22,7 +27,7 @@ function subscribeScroll(notify: () => void): () => void {
 const getScrolledSnapshot = (): boolean => window.scrollY > 8;
 const getScrolledServerSnapshot = (): boolean => false;
 
-export function Navbar({ brandName, links }: NavbarProps) {
+export function Navbar({ locale, brandName, links, ui }: NavbarProps) {
   const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
 
@@ -35,8 +40,11 @@ export function Navbar({ brandName, links }: NavbarProps) {
   // Close the mobile menu when navigating; called from Link onClick handlers.
   const closeMenu = React.useCallback(() => setOpen(false), []);
 
-  const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname?.startsWith(href);
+  const localizedHome = localizeHref(locale, "/");
+  const isActive = (href: string) => {
+    const target = localizeHref(locale, href);
+    return href === "/" ? pathname === localizedHome : pathname?.startsWith(target);
+  };
 
   return (
     <header
@@ -53,7 +61,7 @@ export function Navbar({ brandName, links }: NavbarProps) {
           aria-label="Primary"
         >
           <Link
-            href="/"
+            href={localizedHome}
             onClick={closeMenu}
             aria-label={brandName}
             className="group flex items-center text-base font-semibold tracking-tight text-foreground"
@@ -73,7 +81,7 @@ export function Navbar({ brandName, links }: NavbarProps) {
             {links.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={localizeHref(locale, link.href)}
                   className={cn(
                     "relative inline-flex items-center whitespace-nowrap rounded-full px-3.5 py-2 text-sm font-medium transition-all duration-200",
                     isActive(link.href)
@@ -88,14 +96,15 @@ export function Navbar({ brandName, links }: NavbarProps) {
           </ul>
 
           <div className="flex items-center gap-2">
+            <LocaleSwitcher locale={locale} label={ui.localeSwitcherLabel} />
             <ThemeToggle />
             <ButtonLink
-              href="/contact"
+              href={localizeHref(locale, "/contact")}
               variant="primary"
               size="sm"
               className="hidden sm:inline-flex"
             >
-              İletişim
+              {ui.contactCta}
             </ButtonLink>
 
             {/* Mobile menu trigger */}
@@ -104,7 +113,7 @@ export function Navbar({ brandName, links }: NavbarProps) {
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
               aria-controls="mobile-nav"
-              aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
+              aria-label={open ? ui.closeMenu : ui.openMenu}
               className={cn(
                 "inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/60 bg-surface text-foreground transition-all md:hidden",
                 "hover:border-ocean-medium/60 hover:bg-ocean-light/10 hover:text-ocean-deep dark:hover:text-ocean-light",
@@ -153,7 +162,7 @@ export function Navbar({ brandName, links }: NavbarProps) {
             {links.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={localizeHref(locale, link.href)}
                   onClick={closeMenu}
                   className={cn(
                     "flex items-center justify-between rounded-xl px-4 py-3 text-sm font-medium transition-all",
@@ -171,12 +180,12 @@ export function Navbar({ brandName, links }: NavbarProps) {
             ))}
             <li className="mt-2 pt-2">
               <ButtonLink
-                href="/contact"
+                href={localizeHref(locale, "/contact")}
                 variant="primary"
                 size="md"
                 className="w-full justify-center"
               >
-                İletişim
+                {ui.contactCta}
               </ButtonLink>
             </li>
           </ul>

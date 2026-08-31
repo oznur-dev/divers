@@ -2,12 +2,22 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { SectionWrapper } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/Motion";
 import type { HomeContent } from "@/lib/types";
+import type { Locale } from "@/lib/i18n/config";
+import { localizeHref } from "@/lib/i18n/utils";
 
 export interface HeroSectionProps {
   data: HomeContent["hero"];
+  locale: Locale;
 }
 
-export function HeroSection({ data }: HeroSectionProps) {
+const TRUST_BADGE_ICONS = [
+  <svg key="license" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>,
+  <svg key="certified" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>,
+  <svg key="insured" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
+  <svg key="worldwide" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>,
+];
+
+export function HeroSection({ data, locale }: HeroSectionProps) {
   return (
     <div className="relative overflow-hidden">
       {/* Hero background image with overlay */}
@@ -61,7 +71,7 @@ export function HeroSection({ data }: HeroSectionProps) {
 
         <FadeIn delay={0.15}>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <ButtonLink href={data.primaryCta.href} variant="primary" size="lg" className="w-full sm:w-auto">
+            <ButtonLink href={localizeHref(locale, data.primaryCta.href)} variant="primary" size="lg" className="w-full sm:w-auto">
               {data.primaryCta.label}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -69,7 +79,7 @@ export function HeroSection({ data }: HeroSectionProps) {
               </svg>
             </ButtonLink>
             <ButtonLink
-              href={data.secondaryCta.href}
+              href={localizeHref(locale, data.secondaryCta.href)}
               variant="outline"
               size="lg"
               className="w-full sm:w-auto"
@@ -82,30 +92,14 @@ export function HeroSection({ data }: HeroSectionProps) {
         {/* Trust badges */}
         <FadeIn delay={0.25}>
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-xs text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ocean-light/20 text-ocean-deep dark:text-ocean-light">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
-              </span>
-              <span className="font-medium">TURSAB Belgeli</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ocean-light/20 text-ocean-deep dark:text-ocean-light">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-              </span>
-              <span className="font-medium">PADI Sertifikalı</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ocean-light/20 text-ocean-deep dark:text-ocean-light">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </span>
-              <span className="font-medium">DAN Europe Sigortalı</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ocean-light/20 text-ocean-deep dark:text-ocean-light">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              </span>
-              <span className="font-medium">Dünya Çapında Hizmet</span>
-            </div>
+            {TRUST_BADGE_ICONS.map((icon, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ocean-light/20 text-ocean-deep dark:text-ocean-light">
+                  {icon}
+                </span>
+                <span className="font-medium">{data.trustBadges[index]}</span>
+              </div>
+            ))}
           </div>
         </FadeIn>
         </div>

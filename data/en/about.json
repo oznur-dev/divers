@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "eyebrow": "About Us",
+    "title": "A Team Driven by a Passion for Diving",
+    "subtitle": "Anemon Turizm is a professional tour operator that draws on years of experience and a passion for the underwater world to give divers unforgettable memories."
+  },
+  "content": {
+    "title": "Our Story",
+    "paragraphs": [
+      "Anemon Turizm was founded for those who want to explore the enchanting world of the seas. We are a TURSAB-licensed professional dive tour operator, and for years we've been connecting divers with the most beautiful corners of the underwater world.",
+      "From the Red Sea to the Maldives, from the Bahamas to the Azores, we offer safe, comfortable, and unforgettable diving experiences at the world's most prestigious dive sites. Every tour is carefully planned around our experienced guides and our commitment to quality service.",
+      "Today, with our PADI-certified training programs, liveaboard dive tours, and private diving trips, we're one of Turkey's leading dive operators. Customer satisfaction comes before everything else for us."
+    ]
+  },
+  "values": {
+    "eyebrow": "Our Values",
+    "title": "The Principles That Set Us Apart",
+    "subtitle": "These values are the cornerstones that shape our service quality and customer experience.",
+    "items": [
+      {
+        "id": 1,
+        "title": "Safety",
+        "description": "We give the utmost attention to safety standards on every tour. DAN Europe insurance and professional guidance.",
+        "icon": "Shield"
+      },
+      {
+        "id": 2,
+        "title": "Experience",
+        "description": "With years of experience behind us, we choose the world's best dive sites for you.",
+        "icon": "Sparkles"
+      },
+      {
+        "id": 3,
+        "title": "Transparency",
+        "description": "No hidden fees, clear pricing. You know exactly what you'll pay upfront.",
+        "icon": "Award"
+      },
+      {
+        "id": 4,
+        "title": "Customer Satisfaction",
+        "description": "We give every guest personal attention, working to create unforgettable experiences.",
+        "icon": "TrendingUp"
+      }
+    ]
+  },
+  "seo": {
+    "title": "About Us",
+    "description": "For years, Anemon Turizm has offered diving enthusiasts professional guidance and top-quality service, letting you discover the magic of the underwater world. A TURSAB-licensed, PADI-certified dive operator.",
+    "keywords": ["dive operator", "TURSAB licensed", "PADI instructor", "professional diving"],
+    "ogTitle": "About Us · Anemon Turizm",
+    "ogDescription": "A TURSAB-licensed, PADI-certified professional dive operator. Safe and unforgettable diving adventures."
+  }
+}
